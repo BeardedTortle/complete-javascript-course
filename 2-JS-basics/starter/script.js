@@ -40,7 +40,7 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 
 GOOD LUCK 😀
 */
-let Teams = [];
+
 
 class Team{
     constructor(name,game1, game2, game3){
@@ -52,12 +52,10 @@ class Team{
         Teams.push(this);
     }
 }
+let Teams = [];
 const John = new Team('John', 89, 120, 103);
 const Mike = new Team('Mike', 116, 94, 123);
 const Mary = new Team('Mary', 97,134,105);
-
-Team.allInstances = [];
-Team.allInstances.push(this);
 
 const findHighest = (...teams) =>{
     let avgs = [];
